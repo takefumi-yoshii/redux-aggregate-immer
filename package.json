@@ -1,0 +1,54 @@
+{
+  "name": "redux-aggregate-immer",
+  "version": "1.0.0",
+  "description": "immer wrapper api for redux-aggregate",
+  "main": "dist/index.js",
+  "typings": "typings/index.d.ts",
+  "scripts": {
+    "prepare": "npm run test && npm run build",
+    "build": "tsc src/index.ts --outDir ./dist",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prettier": "prettier \"src/**/*.ts\" \"__tests__/**/*.ts\" --write"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/takefumi-yoshii/redux-aggregate-immer.git"
+  },
+  "author": "takefumi-yoshii",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/takefumi-yoshii/redux-aggregate-immer/issues"
+  },
+  "homepage": "https://github.com/takefumi-yoshii/redux-aggregate-immer#readme",
+  "dependencies": {
+    "immer": "^1.3.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.1.0",
+    "@types/node": "9.4.6",
+    "jest": "^23.1.0",
+    "prettier": "^1.13.7",
+    "ts-jest": "^22.4.6",
+    "ts-node": "5.0.0",
+    "typescript": ">=2.8.0",
+    "typescript-eslint-parser": "14.0.0"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "transform": {
+      "^.+\\.(ts|tsx)$": "./node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+      "**/__tests__/*.(ts|tsx)"
+    ]
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  }
+}
