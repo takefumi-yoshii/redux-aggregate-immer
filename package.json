@@ -1,6 +1,6 @@
 {
   "name": "redux-aggregate-immer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "immer wrapper api for redux-aggregate",
   "main": "dist/index.js",
   "typings": "typings/index.d.ts",
