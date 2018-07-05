@@ -21,11 +21,11 @@ function decrement(s) {
 }
 function setNestedValue (s, value) {
   return {
-    ...state,
+    ...s,
     nested: {
-      ...state.nested,
+      ...s.nested,
       some: {
-        ...state.nested.some,
+        ...s.nested.some,
         value
       }
     }
@@ -37,7 +37,10 @@ export const Mutations = {
   setNestedValue
 }
 ```
-with `wrapImmer`, above code, now be able to write more comfortable.
+
+Above code be able to write more comfortable, with `wrapImmer`.
+Mutable mutations will be convert to immutable mutations.
+To be careful not to return state at those mutation.
 
 ```javascript
 
