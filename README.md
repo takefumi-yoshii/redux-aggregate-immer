@@ -19,13 +19,22 @@ function increment(s) {
 function decrement(s) {
   return { ...s, count: s.count - 1 }
 }
-function setCount (s, value) {
-  return { ...s, count: value }
+function setNestedValue (s, value) {
+  return {
+    ...state,
+    nested: {
+      ...state.nested,
+      some: {
+        ...state.nested.some,
+        value
+      }
+    }
+  }
 }
 export const Mutations = {
   increment,
   decrement,
-  setCount
+  setNestedValue
 }
 ```
 with `wrapImmer`, above code, now be able to write more comfortable.
@@ -45,12 +54,12 @@ function increment(s) {
 function decrement(s) {
   s.count--
 }
-function setCount (s, value) {
+function setNestedValue (s, value) {
   s.nested.some.value = value
 }
 export const Mutations = wrapImmer({
   increment,
   decrement,
-  setCount
+  setNestedValue
 })
 ```
