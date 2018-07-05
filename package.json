@@ -9,7 +9,7 @@
     "build": "tsc src/index.ts --outDir ./dist",
     "test": "jest",
     "test:watch": "jest --watch",
-    "prettier": "prettier \"src/**/*.ts\" \"__tests__/**/*.ts\" --write"
+    "prettier": "prettier \"src/**/*.ts\" \"typings/**/*.ts\" \"__tests__/**/*.ts\" --write"
   },
   "repository": {
     "type": "git",
