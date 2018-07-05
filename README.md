@@ -3,6 +3,7 @@
 [![Latest Version](https://img.shields.io/badge/npm-redux_aggregate_immer-C12127.svg)](https://www.npmjs.com/package/redux-aggregate-immer)
 
 The helper module for [redux-aggregate](https://www.npmjs.com/package/redux-aggregate).
+Below code be able to write more comfortable, with `wrapImmer`.
 
 ```javascript
 
@@ -38,11 +39,14 @@ export const Mutations = {
 }
 ```
 
-Above code be able to write more comfortable, with `wrapImmer`.
 Mutable mutations will be convert to immutable mutations.
 To be careful not to return state at those mutation.
 
 ```javascript
+//
+// @ with wrapImmer
+
+import { wrapImmer } from 'redux-aggregate-immer'
 
 const initialState = {
   count: 0,
