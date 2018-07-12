@@ -2,15 +2,15 @@ import immer from 'immer'
 import { KeyMap, MutableMutations, ImmutableMutations } from '../typings'
 
 function wrapImmer<M extends KeyMap & MutableMutations<M>>(
-  imutations: M
+  mutableMutations: M
 ): ImmutableMutations<M> {
-  const mutations: KeyMap = {}
-  Object.keys(imutations).forEach(imutationKey => {
-    mutations[imutationKey] = <ST, PL>(state: ST, payload?: PL): ST =>
+  const immutableMutations: KeyMap = {}
+  Object.keys(mutableMutations).forEach(key => {
+    immutableMutations[key] = <ST, PL>(state: ST, payload?: PL): ST =>
       immer(state, _state => {
-        imutations[imutationKey](_state, payload)
+        mutableMutations[key](_state, payload)
       })
   })
-  return mutations as ImmutableMutations<M>
+  return immutableMutations as ImmutableMutations<M>
 }
 export { wrapImmer, immer }
