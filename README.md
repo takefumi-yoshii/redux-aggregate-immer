@@ -1,6 +1,7 @@
 # redux-aggregate-immer
 
 [![Latest Version](https://img.shields.io/badge/npm-redux_aggregate_immer-C12127.svg)](https://www.npmjs.com/package/redux-aggregate-immer)
+[![CircleCI](https://circleci.com/gh/takefumi-yoshii/redux-aggregate-immer.svg?style=svg)](https://circleci.com/gh/takefumi-yoshii/redux-aggregate-immer)
 
 The helper module for [redux-aggregate](https://www.npmjs.com/package/redux-aggregate).
 Below code be able to write more comfortable, with `wrapImmer`.
