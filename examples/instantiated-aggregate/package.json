@@ -7,27 +7,28 @@
     "prettier": "prettier \"src/**/*.ts\" \"src/**/*.tsx\" --write"
   },
   "dependencies": {
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-redux": "^5.0.7",
-    "redux": "3.7.2",
-    "redux-aggregate": "^1.4.2",
-    "redux-aggregate-immer": "^1.0.1",
-    "redux-devtools-extension": "2.13.2",
-    "styled-components": "^3.3.3"
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.0.3",
+    "redux": "4.0.1",
+    "redux-aggregate": "^2.1.2",
+    "redux-aggregate-immer": "^1.1.1",
+    "redux-devtools-extension": "2.13.8",
+    "styled-components": "^4.2.0"
   },
   "devDependencies": {
-    "@types/node": "9.4.6",
-    "@types/react": "^16.4.1",
-    "@types/react-dom": "^16.0.6",
-    "@types/react-redux": "^6.0.2",
-    "prettier": "^1.13.7",
-    "ts-loader": "4.0.0",
-    "ts-node": "5.0.0",
-    "typescript": ">=2.8.0",
-    "webpack": "4.1.1",
-    "webpack-cli": "2.0.12",
-    "webpack-dev-server": "3.1.1"
+    "@types/node": "12.0.2",
+    "@types/react": "^16.8.18",
+    "@types/react-dom": "^16.8.4",
+    "@types/react-redux": "^7.0.9",
+    "@types/webpack": "^4.4.32",
+    "prettier": "^1.17.1",
+    "ts-loader": "6.0.1",
+    "ts-node": "8.1.0",
+    "typescript": ">=3.4.5",
+    "webpack": "4.32.2",
+    "webpack-cli": "3.3.2",
+    "webpack-dev-server": "3.4.1"
   },
   "prettier": {
     "semi": false,

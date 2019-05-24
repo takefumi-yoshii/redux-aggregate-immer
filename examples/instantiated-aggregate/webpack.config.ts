@@ -26,9 +26,9 @@ const resolve = {
 
 // _____________
 
-const entries = row => {
-  const entries = {}
-  row.map(entry => {
+const entries = (row: any) => {
+  const entries: { [k:string]: any } = {}
+  row.map((entry: any) => {
     const name = `${entry}`
     entries[name] = `${SRC}/${entry}`
   })

@@ -22,17 +22,17 @@
   },
   "homepage": "https://github.com/takefumi-yoshii/redux-aggregate-immer#readme",
   "dependencies": {
-    "immer": "^1.3.1"
+    "immer": "^3.1.2"
   },
   "devDependencies": {
-    "@types/jest": "^23.1.0",
-    "@types/node": "9.4.6",
-    "jest": "^23.1.0",
-    "prettier": "^1.13.7",
-    "ts-jest": "^22.4.6",
-    "ts-node": "5.0.0",
-    "typescript": ">=2.8.0",
-    "typescript-eslint-parser": "14.0.0"
+    "@types/jest": "^24.0.13",
+    "@types/node": "12.0.2",
+    "jest": "^24.8.0",
+    "prettier": "^1.17.1",
+    "ts-jest": "^24.0.2",
+    "ts-node": "8.1.0",
+    "typescript": ">=3.4.5",
+    "typescript-eslint-parser": "22.0.0"
   },
   "jest": {
     "moduleFileExtensions": [
