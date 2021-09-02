@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/takefumi-yoshii/redux-aggregate-immer#readme",
   "dependencies": {
-    "immer": "^3.1.2"
+    "immer": "^9.0.6"
   },
   "devDependencies": {
     "@types/jest": "^24.0.13",
